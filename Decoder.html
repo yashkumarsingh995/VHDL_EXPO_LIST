@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="Design.css" />
+    
+    
+     
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/skins/default.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavedrom/2.6.8/wavedrom.min.js" type="text/javascript"></script>
+  
+</head>
+
+<body>
+  <div class="pre_menu">
+  <ul id="menu" class="menu" onclick="toggle()">
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  </div>
+  <div id="options" class="options">
+    <ul class="options_ul">
+      <li><a id='a2' onclick="a2_click()" href="#">half adder</a></li>
+      
+      <li><a id='a4'onclick="a4_click()" href="#">full subtractor</a></li>
+      <li><a id='a5' onclick="a5_click()" href="#">multiplexer</a></li>
+      <li><a id='a6' onclick="a6_click()" href="#">demultiplexer</a></li>
+      <li><a id='a7' onclick="a7_click()" href="#">encoder</a></li>
+      <li><a id='a8'onclick="a8_click()" href="#">decoder</a></li>
+    </ul>
+  </div>
+ <div class="code">
+  <div class="design">
+    <h2>Design.vhd</h2>
+    <pre id="code_design">
+      <!--design.vhd-->
+    </pre>
+  </div>
+  <div class="testbench">
+    <h2>testbench.vhd</h2>
+    <pre id="testbench_logic">
+      <!--testbench.vhd-->
+    </pre>
+  </div>
+</div>
+
+<div id ="simulation" class="simulation" onclick="WaveDrom.ProcessAll()">
+ <!--simulation section
+ <script type="WaveDrom">
+  
+   { signal : [
+   { name: "clk",  wave: "p......" },
+   { name: "bus",  wave: "x.34.5x",   data: "head body tail" },
+   { name: "wire", wave: "0.1..0." },
+ ]}
+ </script>-->
+ 
+ 
+</div>
+ 
+ <script src="Design_code.js"></script>
+ <script src="Testbench_code.js"></script>
+ <script src="Simulation_code.js"></script>
+ <script src="main.js"></script>
+</body>
+
+</html>
